@@ -79,7 +79,7 @@ from api_test.models import operations
 s = api_test.APITest()
 
 req = operations.ShowPetByIDRequest(
-    pet_id='South bandwidth male',
+    pet_id='Bicycle',
 )
 
 res = s.pets.show_pet_by_id(req)
