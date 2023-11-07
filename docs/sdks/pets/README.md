@@ -1,5 +1,5 @@
 # Pets
-(*pets*)
+(*.pets*)
 
 ### Available Operations
 
@@ -15,7 +15,6 @@ Create a pet
 
 ```python
 import api_test
-
 
 s = api_test.APITest()
 

@@ -19,7 +19,6 @@ pip install git+https://github.com/speakeasy-sdks/api-test.git
 ```python
 import api_test
 
-
 s = api_test.APITest()
 
 
@@ -35,7 +34,7 @@ if res.status_code == 200:
 ## Available Resources and Operations
 
 
-### [pets](docs/sdks/pets/README.md)
+### [.pets](docs/sdks/pets/README.md)
 
 * [create_pets](docs/sdks/pets/README.md#create_pets) - Create a pet
 * [list_pets](docs/sdks/pets/README.md#list_pets) - List all pets
@@ -62,8 +61,6 @@ Here's an example of one such pagination call:
 # Error Handling
 
 Handling errors in your SDK should largely match your expectations.  All operations return a response object or raise an error.  If Error objects are specified in your OpenAPI Spec, the SDK will raise the appropriate Error type.
-
-
 <!-- End Error Handling -->
 
 
@@ -81,13 +78,11 @@ You can override the default server globally by passing a server index to the `s
 
 For example:
 
-
 ```python
 import api_test
 
-
 s = api_test.APITest(
-    server_idx=0
+    server_idx=0,
 )
 
 
@@ -103,13 +98,11 @@ if res.status_code == 200:
 
 The default server can also be overridden globally by passing a URL to the `server_url: str` optional parameter when initializing the SDK client instance. For example:
 
-
 ```python
 import api_test
 
-
 s = api_test.APITest(
-    server_url="http://petstore.swagger.io/v1"
+    server_url="http://petstore.swagger.io/v1",
 )
 
 
@@ -139,8 +132,6 @@ http_client = requests.Session()
 http_client.headers.update({'x-custom-header': 'someValue'})
 s = api_test.APITest(client: http_client)
 ```
-
-
 <!-- End Custom HTTP Client -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
