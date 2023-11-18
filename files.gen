@@ -8,6 +8,7 @@ src/api_test/utils/__init__.py
 src/api_test/utils/retries.py
 src/api_test/utils/utils.py
 src/api_test/models/errors/sdkerror.py
+tests/helpers.py
 src/api_test/models/operations/createpets.py
 src/api_test/models/operations/listpets.py
 src/api_test/models/operations/showpetbyid.py
