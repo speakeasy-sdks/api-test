@@ -63,7 +63,7 @@ Handling errors in this SDK should largely match your expectations.  All operati
 
 ```python
 import api_test
-from api_test.models import shared
+from api_test.models import errors, shared
 
 s = api_test.APITest()
 
@@ -76,7 +76,7 @@ res = None
 try:
     res = s.pets.create_pets(req)
 except errors.SDKError as e:
-    print(e)  # handle exception
+    # handle exception
     raise(e)
 
 if res.status_code == 200:
