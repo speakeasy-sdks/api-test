@@ -21,7 +21,7 @@ s = api_test.APITest()
 
 req = shared.Pet(
     id=596804,
-    name='string',
+    name='<value>',
 )
 
 res = s.pets.create_pets(req)
@@ -97,7 +97,7 @@ from api_test.models import operations
 s = api_test.APITest()
 
 req = operations.ShowPetByIDRequest(
-    pet_id='string',
+    pet_id='<value>',
 )
 
 res = s.pets.show_pet_by_id(req)
