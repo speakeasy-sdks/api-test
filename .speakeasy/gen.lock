@@ -3,16 +3,16 @@ id: 4a4734c8-ad95-4a47-85c6-8e5cbd85a8eb
 management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
-  speakeasyVersion: 1.207.1
-  generationVersion: 2.280.6
-  releaseVersion: 0.9.1
-  configChecksum: dee755fbb5188472adf02fdcb09623fe
+  speakeasyVersion: 1.227.0
+  generationVersion: 2.291.0
+  releaseVersion: 0.9.2
+  configChecksum: 7824d915d7ba7216852943c0869d90b3
   repoURL: https://github.com/speakeasy-sdks/api-test.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/api-test.git
 features:
   python:
-    core: 4.5.1
+    core: 4.5.2
     globalServerURLs: 2.82.2
     responseFormat: 0.1.0
 generatedFiles:
